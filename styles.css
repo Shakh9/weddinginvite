@@ -56,6 +56,77 @@ h1 {
 h2 {
   animation: fadeInUp 2s ease;
 }
+/* Стили для шапки */
+#main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 1000;
+  background: transparent;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(5px);
+}
+
+#main-header.scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#main-header h1 {
+  font-family: 'Great Vibes', cursive;
+  color: rgb(0, 87, 65);
+  font-size: 50px;
+  margin: 0;
+  transition: color 0.4s ease;
+}
+
+#main-header.scrolled h1 {
+  color: rgb(0, 87, 65);
+}
+
+#main-header nav {
+  display: flex;
+  gap: 30px;
+}
+
+#main-header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+#main-header.scrolled nav a {
+  color: #333;
+}
+
+#main-header nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: rgb(0, 87, 65);
+  transition: width 0.3s ease;
+}
+
+#main-header nav a:hover::after {
+  width: 100%;
+}
 
 /* Герой-секция с фотографией */
 .hero {
@@ -259,77 +330,6 @@ footer {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   animation: fadeInUp 2s ease;
   margin-bottom: 20px;
-}
-/* Стили для шапки */
-#main-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px 0;
-  z-index: 1000;
-  background: transparent;
-  transition: all 0.4s ease;
-  backdrop-filter: blur(5px);
-}
-
-#main-header.scrolled {
-  background: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-  padding: 15px 0;
-}
-
-.header-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#main-header h1 {
-  font-family: 'Great Vibes', cursive;
-  color: rgb(0, 87, 65);
-  font-size: 50px;
-  margin: 0;
-  transition: color 0.4s ease;
-}
-
-#main-header.scrolled h1 {
-  color: rgb(0, 87, 65);
-}
-
-#main-header nav {
-  display: flex;
-  gap: 30px;
-}
-
-#main-header nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-  position: relative;
-}
-
-#main-header.scrolled nav a {
-  color: #333;
-}
-
-#main-header nav a::after {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: rgb(0, 87, 65);
-  transition: width 0.3s ease;
-}
-
-#main-header nav a:hover::after {
-  width: 100%;
 }
 
 .greetings {

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Приглашение на свадьбу</title>
+    <!-- Подключаем красивые шрифты -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Интро-экран с кнопкой открытия приглашения -->
+    <div id="intro">
+      <div id="intro-text">Ravin & Emila</div>
+      <button id="start-btn">Открыть приглашение</button>
+    </div>
+
+    <!-- Кнопка для управления музыкой -->
+    <button id="music-btn" aria-label="Переключить музыку">
+      <div class="music-icon">
+        <div class="music-bar bar1"></div>
+        <div class="music-bar bar2"></div>
+        <div class="music-bar bar3"></div>
+      </div>
+    </button>
+    <!-- Музыкальный плеер -->
+    <audio id="bg-music" loop preload="auto" playsinline>
+      <!-- Укажи свой путь к файлу музыки -->
+      <source src="/music/music.mp3" type="audio/mpeg" />
+    </audio>
+
+    <header id="main-header">
+      <div class="header-content">
+        <h1>Ravin & Emila</h1>
+      </div>
+    </header>
+
+    <!-- Секция 1: Герой с фото и именами -->
+    <section class="hero" id="hero">
+      <div class="hero-overlay">
+        <!-- <h1>Ravin & Emila</h1> -->
+      </div>
+    </section>
+
+    <!-- Секция 2: Приветствие и таймер -->
+    <section class="greetings">
+      <div class="floating-heart">
+        <div class="heart-shape"></div>
+      </div>
+      <h2>Дорогие наши родные и друзья! Мы приглашаем вас разделить с нами наш особенный день!</h2>
+      <h2 style="font-size: 50px">30.08.2025</h2>
+      <h3 style="font-size: 40px">18:00</h3>
+      <img src="/image/3.jpg" alt="30 августа 2025" class="calendar" width="320px" height="320px" />
+      <!-- <h2>30 августа 2025</h2>
+      <h2>18:00</h2> -->
+      <br />
+      <h3>До начала мероприятия осталось:</h3>
+      <div id="countdown" class="countdown-timer">
+        <div class="time-unit">
+          <div class="time-circle days-circle">
+            <div class="time-value" id="days">00</div>
+            <div class="time-label">дней</div>
+          </div>
+        </div>
+
+        <div class="time-unit">
+          <div class="time-circle hours-circle">
+            <div class="time-value" id="hours">00</div>
+            <div class="time-label">часов</div>
+          </div>
+        </div>
+
+        <div class="time-unit">
+          <div class="time-circle minutes-circle">
+            <div class="time-value" id="minutes">00</div>
+            <div class="time-label">минут</div>
+          </div>
+        </div>
+
+        <div class="time-unit">
+          <div class="time-circle seconds-circle">
+            <div class="time-value" id="seconds">00</div>
+            <div class="time-label">секунд</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Секция 3: Место проведения -->
+    <section class="place">
+      <h2>Место проведения</h2>
+      <h3>Банкетный зал «Балетон»</h3>
+      <p>по адресу: ул. Академика Бардина, 28а, Екатеринбург</p>
+      <img src="/image/5.jpg" alt="Банкетный зал" class="venue-image" width="322" height="174" />
+      <img src="/image/2.jpg" alt="Банкетный зал" class="venue-image" width="322" height="174" />
+      <img src="/image/4.jpg" alt="Банкетный зал" class="venue-image" width="322" height="174" />
+    </section>
+
+    <!-- Секция 4: Программа дня -->
+    <section class="programs">
+      <img src="/image/6.JPG" width="430px" height="600px" alt="" />
+      <br />
+      <h2>Программа дня</h2>
+      <br />
+      <div class="program-item">
+        <img src="/icons/free-icon-placeholder-3352353.png" alt="" width="80px" height="80px" /><br />17:00<br />Сбор
+        гостей
+      </div>
+      <br />
+      <div class="program-item">
+        <img src="/icons/free-icon-arch-721925.png" alt="" width="80px" height="80px" /><br />18:00<br />Начало
+        торжества
+      </div>
+      <br />
+      <div class="program-item">
+        <img src="/icons/free-icon-cake-721928.png" alt="" width="80px" height="80px" /><br />21:00<br />Свадебный торт
+        и первый танец виновников торжества
+      </div>
+    </section>
+
+    <!-- Секция 5: Футер -->
+    <footer>
+      <p>Будем ждать вас!</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

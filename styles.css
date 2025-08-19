@@ -1,6 +1,7 @@
-:root {
-  /* Указываем фотографию пары для заднего фона первой секции */
-  /* --hero-photo: url('../image/1.jpg'); */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body {

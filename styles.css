@@ -67,7 +67,7 @@ h2 {
   z-index: 1000;
   transition: all 0.4s ease;
 
-  background: rgba(255, 255, 255, 0.6); /* светлый полупрозрачный фон */
+  background: rgba(255, 255, 255, 0.3); /* светлый полупрозрачный фон */
   -webkit-backdrop-filter: blur(10px); /* Safari / iOS */
   backdrop-filter: blur(10px); /* Десктоп */
   border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* «стеклянная рамка» */

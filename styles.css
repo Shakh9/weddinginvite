@@ -344,6 +344,9 @@ footer {
     flex-direction: column;
     gap: 15px;
   }
+  #main-header {
+    background: rgba(255, 255, 255, 0.11);
+  }
 
   #main-header nav {
     gap: 20px;
